@@ -47,7 +47,7 @@
     padding: 2%;
     margin-top: 4%;
     width: 160px;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 .create_button:hover{
     background-color: rgb(104, 95, 183);
