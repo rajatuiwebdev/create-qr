@@ -1,5 +1,5 @@
 
-# CreateQR - A free to use, fast & realiable QR generation service.
+# CreateQR - A free to use, fast & realiable QR generation service. [unmaintained]
 
 CreateQR is a free-to-use, fast, and reliable QR generation service that allows you to effortlessly create custom QR codes for various purposes. Whether you need to generate QR codes for websites, contact information, promotional materials, or any other application, CreateQR has got you covered.
 
