@@ -3,11 +3,9 @@ import { Link } from "react-router-dom";
 import "../assets/create.css";
 import axios from "axios";
 import Base64Downloader from "react-base64-downloader";
-import { useAlert } from "react-alert";
 export default function Create() {
   const [generated_qr, generateQR] = useState(require("../assets/qrcode.png"));
   const [message, setMessage] = useState("");
-  const alert = useAlert();
   const handleChange = (event) => {
     setMessage(event.target.value);
 
@@ -16,14 +14,12 @@ export default function Create() {
 
   const handleClick = (event) => {
     event.preventDefault();
-    alert.show("Generating QR.");
     const baseURL = `https://createqr-api.netlify.app/gen/${message}`;
     axios.get(baseURL).then((response) => {
     
       generateQR(response.data.src);
       console.log(response.data.src);
       setMessage("");
-      alert.success("QR Generated, now you can download it.")
     });
   };
 
